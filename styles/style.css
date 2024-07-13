@@ -16,8 +16,9 @@ body{
 
 .max-width{
     border: 3px solid salmon;
-    max-width: 1420px;
+    max-width: 1440px;
     margin: 0 auto;
+    margin-bottom: 125px;
 }
 
 header{
@@ -35,11 +36,6 @@ header{
 }
 .text-center{
     text-align: center;
-}
-/* section margin */
-main section{
-    margin: 0 auto;
-    max-width: 1440px;
 }
 
 /* banner section */
@@ -67,9 +63,6 @@ main section{
     font-size: 1.1em;
     font-weight: 400;
     line-height: 1.5em;
-}
-.image{
-    width: 100%;
 }
 
 /* feature section */
@@ -101,34 +94,25 @@ main section{
 .featured-images{
     display: flex;
     gap: 24px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .featured-image{
-    width: 450px;
+    height: 600px;
 }
 
 .featured-image > img{
-    height: 80%;
-    width: 80%;
+    height: 538px;
+    width: 460px;
     border-radius: 50% 50% 0 0;
 }
 .image1{
-    /* height: 80%;
-    width: 80%;
-    border-radius: 50% 50% 0 0; */
     background-color: rgba(167, 33, 98, 0.15);
 }
 .image2{
-    /* height: 80%;
-    width: 80%;
-    border-radius: 50% 50% 0 0; */
     background-color: rgba(5, 151, 160, 0.15);
 }
 .image3{
-    /* height: 80%;
-    width: 80%;
-    border-radius: 50% 50% 0 0; */
     background-color: rgba(71, 125, 17, 0.15);
 }
 
@@ -140,6 +124,20 @@ main section{
     margin-top: 32px;
 }
 
+/* our speciality */
+
+.speciality-container{
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    background: rgba(39, 39, 39, 0.05);
+}
+.speciality{
+    padding: 90px;
+    text-align: center;
+}
+
+/* media quary for smaller devices */
 
 @media screen and (max-width:576px) {
     .banner-container {
@@ -156,7 +154,7 @@ main section{
         gap: 32px;
     }
 
-    .featured-images {
+    .featured-images, .speciality-container{
         display: flex;
         gap: 24px;
         flex-direction: column;
