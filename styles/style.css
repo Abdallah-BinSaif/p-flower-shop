@@ -157,6 +157,20 @@ span.\.offer-off {
     color: rgb(229, 84, 115);
 }
 
+/* Instagram section  */
+
+.insta-info {
+    margin-bottom: 40px;
+}
+.insta-image-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.image img {
+    border: 4px dotted darkgray;
+}
+
+
 /* media quary for smaller devices */
 
 @media screen and (max-width:576px) {
@@ -201,5 +215,12 @@ span.\.offer-off {
     .offer-container {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .insta-image-container{
+        grid-template-columns: 100%;
+    }
+    .image img {
+        width: 100%;
     }
 }
