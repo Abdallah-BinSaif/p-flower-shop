@@ -170,6 +170,30 @@ span.\.offer-off {
     border: 4px dotted darkgray;
 }
 
+/* registration section  */
+.registration-section {
+    background-image: url(../images/latest-deals-bg.png);
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registration-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+form input[type="email"] {
+    width: 700px;
+    height: 62px;
+    border: none;
+    margin: 16px;
+    font-size:16px;
+    padding: 22px;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 /* media quary for smaller devices */
 
@@ -196,13 +220,13 @@ span.\.offer-off {
 
 /* feature section  */
 
-    .featured-images, .speciality-container{
+    .featured-images, .speciality-container, form {
         display: flex;
         gap: 24px;
         flex-direction: column;
         align-items: center;
     }
-    .featured-image > img{
+    .image img, .featured-image > img, .registration-container, form{
         width: 100%;
     }
     
@@ -217,10 +241,15 @@ span.\.offer-off {
         flex-direction: column-reverse;
     }
 
+    /* Instagram section  */
+
     .insta-image-container{
         grid-template-columns: 100%;
     }
-    .image img {
-        width: 100%;
+
+    /* subscribe section  */
+    form input[type="email"] {
+        height: 62px;
+        width: calc(100% - 10px);
     }
 }
